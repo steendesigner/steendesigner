@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FDDB79;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #464646;
+  margin: -70px 0 30px 100px;
+}
+
+.portrait {
+  background-image: url("img/about_trapp.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#butterfly {
+  position: absolute;
+  height: 45vh;
+  width: 40vw;
+  top: 20vh;
+  right: 0;
+}
+
+@media (max-aspect-ratio: 9 / 7) {
+  .portrait {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/about_trapp_mobile.jpg");
+    background-size: cover;
+  }
+  #butterfly {
+    display: none;
+  }
+  .direction {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  p {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

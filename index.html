@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olve Design</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <section>
-        <div class="">
-            <img src="" alt="">
+        <div id="butterfly">
+        </div>
+        <div class="portrait">
+        </div>
+        <div class="direction"> 
+            <p>Jeg tror du mente å gå til <a href="https://olve.design/">olve.design</a></p>
         </div>
     </section>
-    
+    <script src="animation/lottie.js"></script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById("butterfly"),
+			renderer: "svg",
+			loop: true,
+			autoplay: true,
+			path: "animation/butterfly.json"
+		})
+	</script>
 </body>
 </html>
